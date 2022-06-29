@@ -4,6 +4,7 @@
 	<div class="border p-3 mt-4">
 		<h2 class="text-primary">Create Category</h2>
 		<hr />
+		<div asp-validation-summary="All"></div>
 		<div class="mb-3">
 			<label asp-for="Name">Name</label>
 			<input asp-for="Name" class="form-control"/>
@@ -19,3 +20,9 @@
 	</div>
 	
 </form>
+
+@section Scripts{
+	@{
+		<partial name="_ValidationScriptsPartial" />
+	}
+}
